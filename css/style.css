@@ -28,6 +28,7 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing:border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -42,49 +43,64 @@ ol, ul {
 }
 /* End of Reset */
 /* Start of Custom Styles */
-.content {
-    padding: 0 15px;
-        margin: 0 auto;
-        width: 970px;
-}
-/* Navigation Section */
-.top-navigation {
-    background-color: #fff;
-}
-.top-navigation > .content {
-    height: 70px;
-}
-.top-navigation .logo {
-    height: 70px;
-}
-.top-navigation .links {
-    float:right;
+
+body {
+    background-color: LightGray;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.03em;
-    color: #838994;
-    font-size: 16px;
-    margin-top: 25px;
     -webkit-font-smoothing: antialiased;
 }
+
+div {
+    border: 1px solid Chocolate;
+}
+
+
+/* Navigation Section */
+
+.content {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 970px;
+}
+
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 1px solid #DDD;
+}
+.top-navigation > .content {
+    height: 4.35rem;
+  }
+
+.top-navigation .logo {
+    height: 4.375rem;
+}
+
+.top-navigation .links {
+float: right;
+color: #838994;
+font-size: 1.04rem;
+margin-top: 1.7rem;
+letter-spacing: 0.03em;
+}
+
 .top-navigation .links li {
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 1.563rem;
 }
-.top-navigation .links .active {
+.top-navigation .links > .active {
     color: #4c5058;
     font-weight: 600;
 }
 .top-navigation .links li:hover {
     cursor: pointer;
     color: #333333;
-}body {
-    background-color: LightGray;
-    font-family: 'Roboto', sans-serif;
-    -webkit-font-smoothing: antialiased;
 }
-div {
-    border: 1px solid Chocolate;
-}
+
+
+/*introduction section*/
 
 .introduction {
     background-image: url(../images/background.jpg);
@@ -111,7 +127,9 @@ div {
     font-size: 1.563rem;
 }
 
-button {
+/* button section */
+
+.big-button {
     width: 9.688rem;
     background-color: #f15a29;
     border-color: #f15a29;
@@ -127,3 +145,28 @@ button:hover {
 background-color: #d9400e;
 border-color: #cf3d0e;
 cursor: pointer;
+}
+
+/*cases section */
+
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+
+.cases {
+background-color: #fff;
+overflow: hidden;
+padding-bottom: 5rem;
+
+}
+
+.cases .devices {
+    width: 33.3333333%;
+    display: inline-block;  
+  /* styles to assist with debugging */
+    border: 1px solid black;
+    height: 4em;
+}
+
