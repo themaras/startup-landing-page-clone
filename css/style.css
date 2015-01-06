@@ -128,6 +128,7 @@ letter-spacing: 0.03em;
     font-size: 1.563rem;
 }
 
+.introduction .content .buttons
 /* Button Section */
 
 .big-button {
@@ -234,4 +235,8 @@ color: #4c66a4;
 
 .social .instagram {
 color: #3f729b;
+}
+
+.social .icons > li:hover {
+cursor: pointer;
 }
