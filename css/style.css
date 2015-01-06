@@ -58,9 +58,10 @@ body {
 /* Navigation Section */
 
 .content {
-    padding: 0 15px;
-    margin: 0 auto;
-    width: 970px;
+padding: 0 0.938rem;
+margin: 0 auto;
+min-width: 37.5rem;
+width: 60%
 }
 
 .top-navigation {
@@ -71,7 +72,7 @@ body {
     border-bottom: 1px solid #DDD;
 }
 .top-navigation > .content {
-    height: 4.35rem;
+    height: 4.375rem;
   }
 
 .top-navigation .logo {
@@ -104,7 +105,7 @@ letter-spacing: 0.03em;
 
 .introduction {
     background-image: url(../images/background.jpg);
-    background-position: 0 center bottom;
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
     height: 45.938rem;
@@ -170,7 +171,6 @@ padding-bottom: 5rem;
 
 .cases .devices > li {
     width: 33.3333333%;
-
     float: left;
 }
 
@@ -178,4 +178,60 @@ padding-bottom: 5rem;
 font-weight: 400;
 font-size: 1.563rem;
 margin: 2.5rem 0px 1.875rem;
+}
+/* Footer Section*/
 
+.social{
+background-color: #fff;
+overflow: auto;
+padding-bottom: 9.375rem;
+text-align: center;
+}
+
+.social .content {
+	width: 60%;
+}
+
+.social hr {
+border: 0;
+border-top: 1px solid #eaebec;
+margin: 1.313rem 0;
+}
+
+.social .icons > li {
+border-radius: 1.25rem;
+width: 2.5rem;
+height: 2.5rem;
+display: inline-block;
+margin: 1.25rem 5px;
+border: 1px solid #eaebec;
+padding: 0.625rem 0;
+text-align: center;
+}
+
+.social .twitter {
+color: #55acee;
+}
+
+.fa {
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.social .copy {
+font-size: 0.9rem;
+font-weight: 300;
+color: #838994;
+}
+
+.social .facebook {
+color: #4c66a4;
+}
+
+.social .instagram {
+color: #3f729b;
+}
