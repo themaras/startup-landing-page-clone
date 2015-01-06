@@ -50,9 +50,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-div {
+/*div {
     border: 1px solid Chocolate;
-}
+}*/
 
 
 /* Navigation Section */
@@ -100,7 +100,7 @@ letter-spacing: 0.03em;
 }
 
 
-/*introduction section*/
+/*Introduction Section*/
 
 .introduction {
     background-image: url(../images/background.jpg);
@@ -111,7 +111,7 @@ letter-spacing: 0.03em;
     overflow: auto;
 }
 
-.introduction h1 , h3{
+.introduction h1 , .introduction h3{
     color: white;
     text-align: center;
     font-weight: 300;
@@ -127,7 +127,7 @@ letter-spacing: 0.03em;
     font-size: 1.563rem;
 }
 
-/* button section */
+/* Button Section */
 
 .big-button {
     width: 9.688rem;
@@ -147,7 +147,7 @@ border-color: #cf3d0e;
 cursor: pointer;
 }
 
-/*cases section */
+/*Cases Section */
 
 .cases h2 {
     font-size: 2.75rem;
@@ -159,14 +159,23 @@ cursor: pointer;
 background-color: #fff;
 overflow: hidden;
 padding-bottom: 5rem;
-
 }
 
-.cases .devices {
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+    }
+
+.cases .devices > li {
     width: 33.3333333%;
-    display: inline-block;  
-  /* styles to assist with debugging */
-    border: 1px solid black;
-    height: 4em;
+
+    float: left;
 }
+
+.cases .devices h3 {
+font-weight: 400;
+font-size: 1.563rem;
+margin: 2.5rem 0px 1.875rem;
 
